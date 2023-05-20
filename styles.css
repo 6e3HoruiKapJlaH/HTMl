@@ -24,30 +24,39 @@ div {
 
 
 .pageHeader {
-  background-color: cadetblue;
   grid-area: header;
-  /*margin-bottom: auto;*/
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .pageHeader__main-text {
-  max-width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .header__text {
-  max-width: 300px;
-  /*max-height: 5px;*/
-  text-align: center;
+  max-width: 200px;
+  max-height: 600px;
   position: relative;
-  display: block;
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
   line-height: 6px;
-  margin-left: auto;
   margin-right: 0;
-  border: 1px solid rgb(0, 0, 0);
-  background: #ffffff;
+  align-items: center;
+
+}
+
+.header__text img {
+
+  position: relative;
+  width: 50%;
+  border-radius: 15px;
+  padding: 0px 5px;
+
 }
 
 
@@ -56,6 +65,7 @@ div {
   text-align: center;
   font-size: 150%;
 }
+
 .button-container {
   display: flex;
   padding: 0px;
@@ -82,16 +92,17 @@ div {
 .logo {
   grid-area: logo;
 }
+
 .header-container {
   position: relative;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100% - 60px); 
+  height: calc(100% - 60px);
   max-width: 200px;
   padding: 10px;
-  
+
 }
 
 .header-container h1,
@@ -105,6 +116,7 @@ div {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: calc((100% - 10px)/6); /* adjust height to account for margin */
+  height: calc((100% - 10px)/6);
+  /* adjust height to account for margin */
   margin-bottom: 5px;
 }
