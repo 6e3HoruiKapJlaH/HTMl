@@ -1,58 +1,110 @@
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "title title"
+    "logo subtitle";
+  grid-template-rows: auto 90px auto;
+  grid-template-columns: 260px auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+
+header,
+footer,
+article,
+nav,
+div {
+  padding: 1.2em;
+}
+
+
+.pageHeader {
+  background-color: cadetblue;
+  grid-area: header;
+  /*margin-bottom: auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageHeader__main-text {
+  max-width: 800px;
+}
+
+.header__text {
+  max-width: 300px;
+  /*max-height: 5px;*/
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+  line-height: 6px;
+  margin-left: auto;
+  margin-right: 0;
+  border: 1px solid rgb(0, 0, 0);
+  background: #ffffff;
+}
+
+
+.Article {
+  grid-area: title;
+  text-align: center;
+  font-size: 150%;
+}
 .button-container {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 0px;
 }
 
 .button-container button {
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin-right: 5px;
-    flex-grow: 1;
-    text-align: center;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-right: 5px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .button-container button:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
+.Subarticle {
+  grid-area: subtitle;
+  text-align: center;
+}
+
+
+.logo {
+  grid-area: logo;
+}
 .header-container {
-    position: absolute;
-    left: 0;
-    top: 60px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100% - 60px); 
-    max-width: 200px;
-    padding: 10px;
-    
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 60px); 
+  max-width: 200px;
+  padding: 10px;
+  
 }
 
 .header-container h1,
 .header-container h2,
 .header-container h3 {
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 15px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: calc((100% - 10px)/6); /* adjust height to account for margin */
-    margin-bottom: 5px;
-}
-
-.text-frame {
-    position: absolute;
-    left: 230px;
-    top: 90px;
-    border: 2px solid #000;
-    padding: 10px;
-    width: calc(100% - 280px);
-    height: calc(100% - 60px); /* calculating the rest of the height subtracting the button container's height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 15px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc((100% - 10px)/6); /* adjust height to account for margin */
+  margin-bottom: 5px;
 }
