@@ -116,6 +116,8 @@ document.getElementById('header3').addEventListener('click', function() {
     document.getElementById('header4').addEventListener('click', function() {
         var imageElement = document.createElement('img');
         imageElement.src = 'img/main-page.png';
+        imageElement.style.position = 'relative';
+        imageElement.style.width = '100%';
     
         var textFrameElement = document.getElementById('textFrame');
         textFrameElement.innerHTML = ''; // Clear the existing content

@@ -21,7 +21,12 @@ nav,
 div {
   padding: 1.2em;
 }
+img {
 
+  position: relative;
+  border-radius: 15px;
+
+}
 
 .pageHeader {
   grid-area: header;
