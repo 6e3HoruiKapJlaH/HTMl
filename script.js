@@ -23,4 +23,3 @@ document.getElementById('header3').addEventListener('click', function() {
 document.getElementById('header4').addEventListener('click', function() {
     document.getElementById('textFrame').innerText = 'Header 4 clicked';
 });
-
