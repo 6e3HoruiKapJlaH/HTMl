@@ -113,7 +113,16 @@ document.getElementById('header3').addEventListener('click', function() {
         document.getElementById('textFrame').innerText = codeText;
     });
 
- 
+    document.getElementById('header4').addEventListener('click', function() {
+        var imageElement = document.createElement('img');
+        imageElement.src = 'img/main-page.png';
+    
+        var textFrameElement = document.getElementById('textFrame');
+        textFrameElement.innerHTML = ''; // Clear the existing content
+        textFrameElement.appendChild(imageElement);
+    });
+    
+    
     
 document.getElementById('header5').addEventListener('click', function() {
     document.getElementById('textFrame').innerText = `Висновки, виходячи з даної лабораторної роботи:
