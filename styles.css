@@ -1,0 +1,15 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10px;
+}
