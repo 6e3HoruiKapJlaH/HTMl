@@ -18,11 +18,112 @@ document.getElementById('header2').addEventListener('click', function() {
     '- Продуктивність: Сайт повинен швидко завантажуватися і забезпечувати швидку навігацію між сторінками та статтями.';
 });
 document.getElementById('header3').addEventListener('click', function() {
-    document.getElementById('textFrame').innerText = 'Header 3 clicked';
-});
-document.getElementById('header4').addEventListener('click', function() {
-    document.getElementById('textFrame').innerText = 'Header 4 clicked';
-});
+    var codeText = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Blog</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+    
+        <header>
+            <div class="wrapper">
+                <a href="#"><img src="img/logo.png" class="h_logo" title=""></a>
+                <nav>
+                    <ul class="main_nav">
+                        <li class="current"><a href="#">Journal</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- Header End -->
+    
+        <section class="main2 wrapper">
+            <section class="content">
+                <article>
+                    <div class="article_image">
+                        <a href="#">
+                            <img src="img/pic4.jpg" alt="" title="">
+                        </a>
+                    </div>
+                    <div class="post">
+                        <h1 class="title">
+                            <a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+                        </h1>
+                        
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+    
+                        <a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+                    </div>
+                </article>
+    
+                <article>
+                    <div class="article_image">
+                        <a href="#">
+                            <img src="img/pic5.jpg" alt="" title="">
+                        </a>
+                    </div>
+                    <div class="post">
+                        <h1 class="title">
+                            <a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+                        </h1>
+                        
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+    
+                        <a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+                    </div>
+                </article>
+            </section><!-- Content End -->
+    
+            <aside class="sidebar">
+                <section class="widget">
+                    <h3 class="widget-title">About US.</h3>
+                    <div class="textwidget">
+                        <p>Duis aute irure dolor in rhenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <p>Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+                    </div>
+                </section>
+    
+                <section class="widget">
+                    <h3 class="widget-title">Search.</h3>
+                    <form class="search_widget">
+                        <input type="text" id="search-field" class="search-field" placeholder="What are you looking for?"/>
+                    </form>
+                </section>
+            </aside>
+    
+            <nav class="pagination">
+                <a href="#" class="previous"><i></i>Previous</a>
+                <a href="#" class="next">Next<i></i></a>
+            </nav>
+        </section>
+    
+    
+    </body>
+    </html>`;
+        
+        document.getElementById('textFrame').innerText = codeText;
+    });
+
+    document.getElementById('header4').addEventListener('click', function() {
+        var imageElement = document.createElement('img');
+        imageElement.src = 'img/main-page.png';
+    
+        var textFrameElement = document.getElementById('textFrame');
+        textFrameElement.innerHTML = ''; // Clear the existing content
+        textFrameElement.appendChild(imageElement);
+    });
+    
+    
+    
 document.getElementById('header5').addEventListener('click', function() {
     document.getElementById('textFrame').innerText = `Висновки, виходячи з даної лабораторної роботи:
     
