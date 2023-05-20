@@ -20,4 +20,7 @@ document.getElementById('header2').addEventListener('click', function() {
 document.getElementById('header3').addEventListener('click', function() {
     document.getElementById('textFrame').innerText = 'Header 3 clicked';
 });
+document.getElementById('header4').addEventListener('click', function() {
+    document.getElementById('textFrame').innerText = 'Header 4 clicked';
+});
 
