@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: calc(100% - 60px); 
+    max-width: 150px;
     padding: 10px;
 }
 
