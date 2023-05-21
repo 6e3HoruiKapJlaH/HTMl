@@ -112,3 +112,36 @@ document.getElementById('header3').addEventListener('click', function() {
   cssElement.textContent = cssCode;
   textFrame.appendChild(cssElement);
 });
+
+document.getElementById('header4').addEventListener('click', function() {
+
+  var cssCode = `
+  *{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;  
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    }
+  h1 + p {
+    border: #1e1e1e solid;
+    }
+    section> h3{
+      text-align: center;
+    }
+    a[target="_current"] {
+      color: #58c93a;
+      box-shadow: 0 4px 0 #58c93a; 
+    }
+  `;
+
+  var textFrame = document.getElementById('textFrame');
+  textFrame.innerHTML = ''; 
+
+  var cssElement = document.createElement('pre');
+  cssElement.style.color = 'blue';
+  cssElement.textContent = cssCode;
+  textFrame.appendChild(cssElement);
+});
