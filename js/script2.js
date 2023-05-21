@@ -174,3 +174,45 @@ document.getElementById('header4').addEventListener('click', function() {
   imageElement.style.display = 'block';
   textFrame.appendChild(imageElement);
 });
+
+
+var textAdded = false;
+document.getElementById('css-tasks').addEventListener('click', function(){
+
+  if (!textAdded) {
+    var textContainer = document.createElement('div');
+    textContainer.id = 'textContainer';
+
+    var textFrame = document.getElementById('textFrame');
+    textFrame.innerText = '';
+
+    var paragraph1 = document.createElement('p');
+    paragraph1.id = 'text1';
+    paragraph1.textContent = 'Текст1: 123';
+    textContainer.appendChild(paragraph1);
+
+    var paragraph2 = document.createElement('p');
+    paragraph2.id = 'text2';
+    paragraph2.textContent = 'Текст2: 123';
+    textContainer.appendChild(paragraph2);
+
+    var paragraph3 = document.createElement('p');
+    paragraph3.id = 'text3';
+    paragraph3.textContent = 'Текст3: 123';
+    textContainer.appendChild(paragraph3);
+
+    var paragraph4 = document.createElement('p');
+    paragraph4.id = 'text4';
+    paragraph4.textContent = 'Текст4: 123';
+    textContainer.appendChild(paragraph4);
+
+    var paragraph5 = document.createElement('p');
+    paragraph5.id = 'text5';
+    paragraph5.textContent = 'Текст5: 123';
+    textContainer.appendChild(paragraph5);
+
+    textFrame.appendChild(textContainer);
+
+    textAdded = true;
+          }
+        });
