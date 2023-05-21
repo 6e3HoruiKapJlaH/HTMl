@@ -109,6 +109,7 @@ img {
 }
 
 .header-container li,
+.header-container h1,
 .header-container h2,
 .header-container h3 {
   border: 2px solid #000;
