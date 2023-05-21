@@ -109,7 +109,6 @@ document.getElementById('header3').addEventListener('click', function() {
     
     </body>
     </html>`;
-        
         document.getElementById('textFrame').innerText = codeText;
     });
 
