@@ -4,8 +4,8 @@ body {
   display: grid;
   grid-template-areas:
     "header header"
-    "title title"
-    "logo subtitle";
+    "button button"
+    "task subtitle";
   grid-template-rows: auto 90px auto;
   grid-template-columns: 260px auto;
   grid-row-gap: 10px;
@@ -40,7 +40,6 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-
 }
 
 .header__text {
@@ -52,7 +51,6 @@ img {
   line-height: 6px;
   margin-right: 0;
   align-items: center;
-
 }
 
 .header__text img {
@@ -65,8 +63,8 @@ img {
 }
 
 
-.Article {
-  grid-area: title;
+.buttons-list {
+  grid-area: button;
   text-align: center;
   font-size: 150%;
 }
@@ -88,14 +86,14 @@ img {
   margin-right: 0;
 }
 
-.Subarticle {
+.main_contener {
   grid-area: subtitle;
   text-align: center;
 }
 
 
-.logo {
-  grid-area: logo;
+.tasks {
+  grid-area: task;
 }
 
 .header-container {
@@ -122,6 +120,5 @@ img {
   align-items: center;
   text-align: center;
   height: calc((100% - 10px)/6);
-  /* adjust height to account for margin */
   margin-bottom: 5px;
 }
