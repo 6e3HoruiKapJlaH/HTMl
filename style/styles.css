@@ -123,3 +123,7 @@ img {
   height: calc((100% - 10px)/6);
   margin-bottom: 5px;
 }
+
+#submenu{
+  display: none;
+}
