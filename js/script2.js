@@ -186,29 +186,56 @@ document.getElementById('css-tasks').addEventListener('click', function(){
     var textFrame = document.getElementById('textFrame');
     textFrame.innerText = '';
 
-    var paragraph1 = document.createElement('p');
-    paragraph1.id = 'text1';
-    paragraph1.textContent = 'Текст1: 123';
+    var paragraph1 = document.createElement('pre');
+    paragraph1.id = 'font_click';
+    paragraph1.textContent = `#font_click {
+      font-family: "Gill Sans", sans-serif;
+    }`;
     textContainer.appendChild(paragraph1);
 
-    var paragraph2 = document.createElement('p');
-    paragraph2.id = 'text2';
-    paragraph2.textContent = 'Текст2: 123';
+    var paragraph2 = document.createElement('pre');
+    paragraph2.id = 'border_click';
+    paragraph2.textContent =`#border_click {
+      border: #000 2px solid;
+    }`;
     textContainer.appendChild(paragraph2);
 
-    var paragraph3 = document.createElement('p');
-    paragraph3.id = 'text3';
-    paragraph3.textContent = 'Текст3: 123';
+    var paragraph3 = document.createElement('pre');
+    paragraph3.id = 'background_click';
+    paragraph3.textContent =`#background_click {
+      background-color: #42cf7f;
+    }`;
     textContainer.appendChild(paragraph3);
 
-    var paragraph4 = document.createElement('p');
-    paragraph4.id = 'text4';
-    paragraph4.textContent = 'Текст4: 123';
+    var paragraph4 = document.createElement('pre');
+    paragraph4.id = 'color_click';
+    paragraph4.textContent = `#color_click {
+      color: #a00ec1;
+    }`;
     textContainer.appendChild(paragraph4);
 
-    var paragraph5 = document.createElement('p');
-    paragraph5.id = 'text5';
-    paragraph5.textContent = 'Текст5: 123';
+    var paragraph5 = document.createElement('pre');
+    paragraph5.id = 'css_adv_click';
+    paragraph5.textContent = `
+    #css_adv_click {
+      background-color: black;
+      color: #00fd2a;
+      border: 6px solid #00fd2a;
+      border-radius: 15px;
+      padding: 15px 25px;
+      font-size: 30px;
+      font-family: tahoma;
+      letter-spacing: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      filter: drop-shadow(0 0 15px #00fd2a) drop-shadow(0 0 50px #00fd2a) contrast(2) brightness(2);
+      transition: .5s;
+    }
+    #css_adv_click:hover {
+      color: black;
+      background-color: #00fd2a;
+      filter: drop-shadow(0 0 20px #00fd2a) contrast(2) brightness(2);
+    }`;
     textContainer.appendChild(paragraph5);
 
     textFrame.appendChild(textContainer);
