@@ -71,7 +71,36 @@ document.getElementById('header2').addEventListener('click', function() {
   `;
 
   var textFrame = document.getElementById('textFrame');
-  textFrame.innerHTML = ''; // Очистка содержимого элемента
+  textFrame.innerHTML = ''; 
+
+  var htmlElement = document.createElement('pre');
+  htmlElement.style.color = '#2C81B7';
+  htmlElement.textContent = htmlCode;
+  textFrame.appendChild(htmlElement);
+
+  var cssElement = document.createElement('pre');
+  cssElement.style.color = 'blue';
+  cssElement.textContent = cssCode;
+  textFrame.appendChild(cssElement);
+});
+
+document.getElementById('header3').addEventListener('click', function() {
+  var htmlCode = `
+  <form class="search_widget">
+					<input type="text" id="search-field" class="search-field" placeholder="What are you looking for?"/>
+	</form>
+  `;
+
+  var cssCode = `
+  #search-field{
+    background-color: #482a6e;
+    font-size: 25px;
+    text-align: end;
+  }
+  `;
+
+  var textFrame = document.getElementById('textFrame');
+  textFrame.innerHTML = ''; 
 
   var htmlElement = document.createElement('pre');
   htmlElement.style.color = '#2C81B7';
