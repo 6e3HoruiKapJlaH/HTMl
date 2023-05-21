@@ -1,3 +1,4 @@
+// creating sublist
 var selectorLi = document.getElementById('selector-li');
 var submenu = document.getElementById('submenu');
 
@@ -8,6 +9,9 @@ selectorLi.addEventListener('click', function() {
     submenu.style.display = 'none';
   }
 });
+
+//adding text to the headers
+
 
 document.getElementById('header1').addEventListener('click', function() {
   var htmlCode = `
@@ -43,3 +47,39 @@ document.getElementById('header1').addEventListener('click', function() {
   textFrame.appendChild(cssElement);
 });
 
+
+document.getElementById('header2').addEventListener('click', function() {
+  var htmlCode = `
+  <div class="wrapper">
+			<nav>
+				<ul class="main_nav">
+					<li class="current"><a href="#" target="_current">Journal</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+  `;
+
+  var cssCode = `
+  .wrapper{
+    width: 978px;
+    height: auto;
+    margin: 0 auto;
+  }
+  `;
+
+  var textFrame = document.getElementById('textFrame');
+  textFrame.innerHTML = ''; // Очистка содержимого элемента
+
+  var htmlElement = document.createElement('pre');
+  htmlElement.style.color = '#2C81B7';
+  htmlElement.textContent = htmlCode;
+  textFrame.appendChild(htmlElement);
+
+  var cssElement = document.createElement('pre');
+  cssElement.style.color = 'blue';
+  cssElement.textContent = cssCode;
+  textFrame.appendChild(cssElement);
+});
