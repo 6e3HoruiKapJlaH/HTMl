@@ -33,8 +33,11 @@ document.getElementById('header1').addEventListener('click', function() {
     color: blue;
   }`;
 
+  var imageUrl = 'img/tag_p.png';
+
   var textFrame = document.getElementById('textFrame');
   textFrame.innerHTML = ''; 
+
 
   var htmlElement = document.createElement('pre');
   htmlElement.style.color = '#2C81B7';
@@ -45,6 +48,11 @@ document.getElementById('header1').addEventListener('click', function() {
   cssElement.style.color = 'blue';
   cssElement.textContent = cssCode;
   textFrame.appendChild(cssElement);
+
+  var imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.style.display = 'block';
+  textFrame.appendChild(imageElement);
 });
 
 
@@ -70,6 +78,8 @@ document.getElementById('header2').addEventListener('click', function() {
   }
   `;
 
+  var imageUrl = 'img/class_selector.png';
+
   var textFrame = document.getElementById('textFrame');
   textFrame.innerHTML = ''; 
 
@@ -82,6 +92,11 @@ document.getElementById('header2').addEventListener('click', function() {
   cssElement.style.color = 'blue';
   cssElement.textContent = cssCode;
   textFrame.appendChild(cssElement);
+
+  var imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.style.display = 'block';
+  textFrame.appendChild(imageElement);
 });
 
 document.getElementById('header3').addEventListener('click', function() {
@@ -99,6 +114,8 @@ document.getElementById('header3').addEventListener('click', function() {
   }
   `;
 
+  var imageUrl = 'img/id_selector.png';
+
   var textFrame = document.getElementById('textFrame');
   textFrame.innerHTML = ''; 
 
@@ -111,6 +128,11 @@ document.getElementById('header3').addEventListener('click', function() {
   cssElement.style.color = 'blue';
   cssElement.textContent = cssCode;
   textFrame.appendChild(cssElement);
+
+  var imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.style.display = 'block';
+  textFrame.appendChild(imageElement);
 });
 
 document.getElementById('header4').addEventListener('click', function() {
@@ -137,6 +159,8 @@ document.getElementById('header4').addEventListener('click', function() {
     }
   `;
 
+  var imageUrl = 'img/other_selectors.png';
+
   var textFrame = document.getElementById('textFrame');
   textFrame.innerHTML = ''; 
 
@@ -144,4 +168,9 @@ document.getElementById('header4').addEventListener('click', function() {
   cssElement.style.color = 'blue';
   cssElement.textContent = cssCode;
   textFrame.appendChild(cssElement);
+
+  var imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.style.display = 'block';
+  textFrame.appendChild(imageElement);
 });
