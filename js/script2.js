@@ -176,10 +176,8 @@ document.getElementById('header4').addEventListener('click', function() {
 });
 
 
-var textAdded = false;
 document.getElementById('css-tasks').addEventListener('click', function(){
 
-  if (!textAdded) {
     var textContainer = document.createElement('div');
     textContainer.id = 'textContainer';
 
@@ -228,7 +226,9 @@ document.getElementById('css-tasks').addEventListener('click', function(){
       letter-spacing: 5px;
       cursor: pointer;
       font-weight: bold;
-      filter: drop-shadow(0 0 15px #00fd2a) drop-shadow(0 0 50px #00fd2a) contrast(2) brightness(2);
+      filter: drop-shadow(0 0 15px #00fd2a) 
+      drop-shadow(0 0 50px #00fd2a) 
+      contrast(2) brightness(2);
       transition: .5s;
     }
     #css_adv_click:hover {
@@ -240,6 +240,5 @@ document.getElementById('css-tasks').addEventListener('click', function(){
 
     textFrame.appendChild(textContainer);
 
-    textAdded = true;
-          }
+          
         });

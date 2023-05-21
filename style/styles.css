@@ -90,8 +90,18 @@ img {
 .main_contener {
   grid-area: subtitle;
   text-align: left;
+  display: flex;
+  max-width: 1100px;
 }
-
+.text-frame{
+  position: relative;
+  
+  max-width: 100%;
+}
+.text-frame img{
+  position: relative;
+  max-width: 100%;
+}
 
 .tasks {
   grid-area: task;
@@ -151,7 +161,6 @@ img {
   border: 6px solid #00fd2a;
   border-radius: 15px;
   padding: 15px 25px;
-  font-size: 30px;
   font-family: tahoma;
   letter-spacing: 5px;
   cursor: pointer;
