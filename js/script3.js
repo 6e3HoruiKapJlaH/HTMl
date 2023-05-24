@@ -21,3 +21,14 @@ task3.addEventListener('click', function() {
     submenu2.style.display = 'none';
   }
 });
+
+
+document.getElementById('lab3-theme').addEventListener('click', function() {
+  document.getElementById('textFrame').innerText = 'Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА\n' +
+      'ЗАСОБАМИ CSS та FLEXBOX.\n' +
+      '\nМета:\n' +
+      '⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на\n' +
+      'основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-\n' +
+      'сторінок\n' +
+      '⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX';
+});
