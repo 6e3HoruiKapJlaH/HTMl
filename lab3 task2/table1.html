@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+    table {
+      width: 1879px;
+      height: 937px;
+      border-collapse: collapse;
+    }
+    
+    td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    
+    #block1 {
+      width: 100%;
+      height: 62px;
+      text-align: left;
+      vertical-align: bottom;
+      background-color: blue;
+    }
+    
+    #block2 {
+      width: 120px;
+      height: 740px;
+      background-color: yellow;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    #block3 {
+      background-color: blue;
+      width: 100%;
+      text-align: left;
+      vertical-align: bottom;
+      height: 61px;
+    }
+    
+    #block4 {
+      width: 500px;
+      padding: 120px;
+      text-align: center;
+      vertical-align: text-top;
+      background-color: white;
+    }
+    
+    #block5 {
+      background-color: yellow;
+      width: 120px;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" width="860" align="center">
+    <tr>
+      <td id="block1" colspan="3">Header (Block 1)</td>
+    </tr>
+    <tr>
+      <td id="block2">Block 2</td>
+      <td id="block4">Block 4</td>
+      <td id="block5">Block 5</td>
+    </tr>
+    <tr>
+      <td id="block3" colspan="3">Footer (Block 3)</td>
+    </tr>
+  </table>
+</body>
+</html>
