@@ -1176,3 +1176,659 @@ document.getElementById('conclusions').addEventListener('click', function() {
       
   `
   });
+
+  document.getElementById('header3').addEventListener('click', function() {
+    var htmlCode = `<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <title>Розмітка з плаваючими блоками</title>
+        <style>
+            .orange {
+                background-color: orange;
+            }
+    
+            .blue {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div style="width: 900px">
+            <div class="block blue" style="width: 100%; height: 100px">1</div>
+            <div style="width: 100%; height: 200px">
+                <div class="block orange" style="width: 300px; height: 200px; float: left">2</div>
+    
+                <div>
+                    <div class="block orange" style="width: 600px; height: 50px; float: left">5</div>
+                    <div class="block" style="width: 300px; height: 200px; float: left">4</div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+            <div class="block blue" style="width: 100%; height: 100px">3</div>
+        </div>
+    </body>
+    </html>`
+    ;
+  
+    var textFrame = document.getElementById('textFrame');
+    textFrame.innerHTML = ''; 
+    var imageUrl1 = 'img/block1.png';
+    var imageUrl2 = 'img/block1.1.png'
+  
+  
+    var htmlElement = document.createElement('pre');
+    htmlElement.style.color = '#2C81B7';
+    htmlElement.textContent = htmlCode;
+    textFrame.appendChild(htmlElement);
+  
+    var imageElement1 = document.createElement('img');
+    imageElement1.src = imageUrl1;
+    imageElement1.style.display = 'block';
+    textFrame.appendChild(imageElement1);
+  
+    var imageElement2 = document.createElement('img');
+    imageElement2.src = imageUrl2;
+    imageElement2.style.display = 'block';
+    textFrame.appendChild(imageElement2);
+  });
+
+
+
+
+  document.getElementById('header4').addEventListener('click', function() {
+    var htmlCode = `
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <title>Розмітка з плаваючими блоками</title>
+        <style>
+            .orange {
+                background-color: orange;
+            }
+    
+            .blue {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div style="width: 100%">
+            <div class="blue" style="width: 100%; height: 100px">1</div>
+            <div style="width: 100%; height: 200px">
+                <div class="orange" style="width: 20%; height: 200px; float: left">2</div>
+                <div>
+                    <div class="orange" style="width: 80%; height: 50px; float: left">5</div>
+                    <div style="width: 80%; height: 200px; float: left">4</div>
+                 </div>
+                
+                
+            </div>
+            <div class="blue" style="width: 100%; height: 100px">3</div>
+        </div>
+    </body>
+    
+    </html>
+    `;
+  
+    var textFrame = document.getElementById('textFrame');
+    textFrame.innerHTML = ''; 
+    var imageUrl1 = 'img/block2.png';
+    var imageUrl2 = 'img/block2.2.png'
+  
+  
+    var htmlElement = document.createElement('pre');
+    htmlElement.style.color = '#2C81B7';
+    htmlElement.textContent = htmlCode;
+    textFrame.appendChild(htmlElement);
+  
+    var imageElement1 = document.createElement('img');
+    imageElement1.src = imageUrl1;
+    imageElement1.style.display = 'block';
+    textFrame.appendChild(imageElement1);
+  
+    var imageElement2 = document.createElement('img');
+    imageElement2.src = imageUrl2;
+    imageElement2.style.display = 'block';
+    textFrame.appendChild(imageElement2);
+  });
+
+
+
+
+
+  document.getElementById('task1').addEventListener('click', function() {
+    var htmlCode = `
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<nav>
+				<ul class="main_nav">
+					<li class="current"><a href="#" target="_current">Journal</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header><!-- Header End -->
+
+	<section class="main2 wrapper">
+		<section class="content">
+			<article>
+				<div class="article_image">
+					<a href="#">
+						<img src="img/pic4.jpg" alt="" title="">
+					</a>
+				</div>
+				<div class="post">
+					<h1 class="title">
+						<a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+					</h1>
+					
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+
+					<a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+				</div>
+			</article>
+
+			<article>
+				<div class="article_image">
+					<a href="#">
+						<img src="img/pic5.jpg" alt="" title="">
+					</a>
+				</div>
+				<div class="post">
+					<h1 class="title">
+						<a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+					</h1>
+					
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+
+					<a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+				</div>
+			</article>
+		</section><!-- Content End -->
+
+		<aside class="sidebar">
+			<section class="widget">
+				<h3 class="widget-title">About US.</h3>
+				<div class="textwidget">
+					<p>Duis aute irure dolor in rhenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					<p>Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+				</div>
+			</section>
+
+			<section class="widget">
+				<h3 class="widget-title">Search.</h3>
+				<form class="search_widget">
+					<input type="text" id="search-field" class="search-field" placeholder="What are you looking for?"/>
+				</form>
+			</section>
+		</aside>
+
+		<nav class="pagination">
+			<a href="#" class="previous"><i></i>Previous</a>
+			<a href="#" class="next">Next<i></i></a>
+		</nav>
+	</section>
+
+
+</body>
+</html>
+    `;
+
+    var cssCode = `
+  
+
+
+/*  Fonts  */
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/Lato-Regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold.ttf') format('truetype'),
+         url('../fonts/Lato-Bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+header{
+	width: 100%;
+	height: 126px;
+	background-color: #292929; 
+	border-bottom: 4px #1e1e1e solid;
+}
+
+header img.h_logo{
+
+	display: block;
+	float: left;
+	margin-top: 49px;
+	
+}
+
+header nav{
+	float: right;
+}
+
+ul.main_nav{	
+	font-family: 'LatoBold', 'Helvetica', arial;
+	margin-right: -1px;
+	font-weight: bold;
+}
+
+ul.main_nav li{
+	float: left;
+	letter-spacing: 2px;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+ul.main_nav li a{
+	display: block;
+	width: 130px;
+	height: 71px;
+	padding-top: 55px;
+	border-right: 1px #1e1e1e solid;
+	vertical-align: middle;
+	text-decoration: none;
+	text-shadow: 0px 1px 0 #1e1e1e;
+	text-align: center;
+}
+
+ul.main_nav li:first-child a{
+	border-left: 1px #1e1e1e solid; 
+}
+
+
+
+ul.main_nav li a:hover{
+	background: #242424;
+}
+
+/*  Main section  */
+.main{
+	position: relative;
+	border-left: 1px #e1e0e0 solid;
+	border-right: 1px #e1e0e0 solid;
+	height: auto;
+	overflow: hidden;
+}
+
+.main article{
+	margin: 80px 0;
+	overflow: hidden;
+}
+
+
+.main .article_image,
+.main .post{
+	float: left; 
+}
+
+.main .article_image{
+	width: 470px;
+	margin-right: 40px;
+}
+
+
+.main .post{
+	width: 430px;
+	float: left;
+}
+
+.main .post h1.title,
+.main2 .post h1.title{
+	font-family: 'LatoBold', 'Helvetica', arial;
+	font-weight: bold;
+	font-size: 28px;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.main .title a,
+.main2 .title a{
+	text-decoration: none;
+	color: #4f4e4e;
+}
+
+.main .title a:hover,
+.main2 .title a:hover{
+	color: #58c93a;
+}
+
+.main .post p,	
+.main2 .post p{	
+	font-family: 'LatoRegular', 'Helvetica', arial;
+	font-size: 16px;
+	color: #606060;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.main a.read_more,
+.main2 a.read_more{
+	font-family: 'LatoRegular', 'Helvetica', arial;
+	display: inline-block;
+	padding: 10px 30px 13px 30px;
+	background: #ffffff;
+	border: 2px #c2c2c2 solid;
+	color: #c2c2c2;
+	text-decoration: none;
+	margin-top: 14px;
+
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+}
+
+.main a.read_more:hover,
+.main2 a.read_more:hover{
+	border: 2px #58c93a solid;
+	color: #58c93a;
+}
+
+.main a.read_more i.read_more_arrow,
+.main2 a.read_more i.read_more_arrow{
+	width: 15px;
+	height: 7px;
+	background: url('../img/read_more_arrow.png') no-repeat;
+	display: inline-block;
+	opacity: 0;
+	margin-left: -5px;
+}
+
+.main a.read_more:hover i.read_more_arrow,
+.main2 a.read_more:hover i.read_more_arrow{
+	opacity: 1;
+	margin-left: 5px;
+}
+
+.main2{
+	padding-top: 80px;
+	position: relative;
+	border-left: 1px #e1e0e0 solid;
+	border-right: 1px #e1e0e0 solid;
+	height: auto;
+	overflow: hidden;
+}
+
+.main2 .content{
+	width: 620px;
+	float: left;
+}
+
+.main2 .post{
+	width: 580px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+
+
+/*  Sidebar & widgets  */
+aside{
+	width: 280px;
+	height: 1000px;
+	float: right;
+}
+
+aside .widget{
+	margin-bottom: 80px;
+}
+
+aside h3.widget-title{
+	width: 240px;
+	padding: 17px 20px;
+	border-left: 3px #58c93a solid;
+	background: #f8f8f8;
+	margin-bottom: 20px;
+	font-family: 'LatoBold', 'Helvetica', arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #6c6969;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+aside .textwidget p{
+	width: 240px;
+	padding: 0 20px;
+	font-family: 'LatoRegular', 'Helvetica', arial;
+	font-size: 16px;
+	color: #737373;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+
+.search_widget .search-field{
+	width: 240px;
+	height: 50px;
+	padding: 0 20px;
+	color: #828282;
+	font-family: 'LatoRegular', 'Helvetica', arial;
+	font-size: 12px;
+	letter-spacing: .5px;
+	outline: none;
+	border: 1px #e1e0e0 solid;
+}
+
+
+.search_widget .search-field:focus{
+	border: 1px #b9b9b9 solid;
+}
+
+
+
+::-webkit-input-placeholder {
+   color: #b9b9b9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #b9b9b9;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #b9b9b9;  
+}
+
+:-ms-input-placeholder {  
+   color: #b9b9b9;  
+}
+
+/*  pagination  */
+.pagination{
+	display: block;
+	width: 100%;
+	padding: 30px 0;
+	border-top: 1px #e1e0e0 solid;
+	border-bottom: 1px #e1e0e0 solid;
+	overflow: hidden;
+}
+
+.pagination a{
+	color: #818181;
+}
+
+.previous,
+.next{
+	text-decoration: none;
+	margin: 0 30px;
+	font-family: 'LatoBold', 'Helvetica', arial;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.previous{
+	float: left;
+}
+
+.next{
+	float: right;
+}
+
+.previous i,
+.next i{
+	width: 15px;
+	height: 7px;
+	display: inline-block;
+	margin-bottom: 3px;
+	background: url('../img/pagination.png') no-repeat;
+}
+
+.previous i{
+	background-position: 0 0;
+	margin-right: 10px;
+}
+
+.next i{
+	background-position: -16px 0;
+	margin-left: 10px;
+}
+
+.previous:hover,
+.next:hover{
+	color: #58c93a;
+}
+.previous:hover i,
+.next:hover i{
+	background: url('../img/pagination_hover.png') no-repeat; 
+}
+
+.previous:hover i{
+	background-position: 0px 0;
+}
+
+.next:hover i{
+	background-position: -16px 0;
+}
+
+
+
+
+ul.main_nav li a,
+.main .title a,
+.main2 .title a,
+.main a.read_more,
+.main2 a.read_more,
+.main a.read_more i.read_more_arrow,
+.main2 a.read_more i.read_more_arrow,
+.previous,
+.next,
+.previous i,
+.next i,
+.search_widget .search-field{
+	transition: .2s linear;
+	-webkit-transition: .2s linear;
+	-moz-transition: .2s linear;
+	-o-transition: .2s linear;
+}
+
+/* task 2 */
+p{
+	background-color: #58c93a;
+    text-align: end;
+}
+.wrapper{
+	width: 978px;
+	height: auto;
+	margin: 0 auto;
+}
+#search-field{
+	background-color: #482a6e;
+	font-size: 25px;
+	text-align: end;
+}
+
+h1 + p {
+border: #1e1e1e solid;
+}
+section> h3{
+	text-align: center;
+}
+a[target="_current"] {
+	color: #58c93a;
+	box-shadow: 0 4px 0 #58c93a; 
+}
+  `;
+
+  
+  
+    var textFrame = document.getElementById('textFrame');
+    textFrame.innerHTML = ''; 
+    var imageUrl = 'img/maket.png'
+  
+  
+    var htmlElement = document.createElement('pre');
+    htmlElement.style.color = '#2C81B7';
+    htmlElement.textContent = htmlCode;
+    textFrame.appendChild(htmlElement);
+
+    var cssElement = document.createElement('pre');
+    cssElement.style.color = 'blue';
+    cssElement.textContent = cssCode;
+    textFrame.appendChild(cssElement);
+  
+    var imageElement1 = document.createElement('img');
+    imageElement1.src = imageUrl;
+    imageElement1.style.display = 'block';
+    textFrame.appendChild(imageElement1);
+  });
