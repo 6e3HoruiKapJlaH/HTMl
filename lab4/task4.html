@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 lab 4</title>
+</head>
+<style>
+    input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<script>
+    function arraySort() {
+
+        const result = document.getElementById('result');
+        const dataInput = document.getElementById('data');
+        const arr = dataInput.value.split(',').map(Number);
+        const arrStart = arr.slice();
+        // Завдання 1
+        //let arr = [2, -5, 6, -10, 8, -3, 0, -7];
+        //let arr = [-2, -5, -6, -10, -8, 1, 0, -7];
+        //let arr = [2, 5, 6, 10, 8, 1, 0, 7];
+
+        let minPositive = Infinity;
+        let maxNegative = -Infinity;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > 0 && arr[i] < minPositive) {
+                minPositive = arr[i];
+            }
+            if (arr[i] < 0 && arr[i] > maxNegative) {
+                maxNegative = arr[i];
+            }
+        }
+
+        console.log(`Найбільший серед від'ємних: ${maxNegative}`);
+        console.log(`Найменший серед додатних: ${minPositive}`);
+
+        // Завдання 2
+        for (let i = 0; i < arr.length - 1; i++) {
+            let indexMin = i
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[indexMin] > arr[j]) {
+                    indexMin = j
+                }
+            }
+            if (indexMin !== i) {
+                [arr[i], arr[indexMin]] = [arr[indexMin], arr[i]]
+            }
+        }
+
+        console.log(`Масив після сортування: ${arr}`);
+        result.innerHTML = `Масив до сортування: ${arrStart}<br> Найбільший серед від'ємних: ${maxNegative}<br> Найменший серед додатних: ${minPositive}<br> Масив після сортування: ${arr}`
+    }
+
+</script>
+
+<body>
+    <input type="text" id="data" placeholder="Введіть числа через кому">
+    <button onclick="arraySort()">Сортувати масив</button>
+    <h3 id="result"></h3>
+</body>
+
+</html>
