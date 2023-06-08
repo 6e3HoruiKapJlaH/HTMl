@@ -198,7 +198,7 @@ document.getElementById('header4').addEventListener('click', function() {
     var linkElement = document.createElement('a');
     linkElement.href = 'lab4/task4.html';
     linkElement.textContent = 'Реалізація завдання';
-    linkElement.style.color = '#2C81B7';
+    linkElement.style.color = 'blue';
   
     textFrame.appendChild(linkElement);
   
@@ -209,3 +209,60 @@ document.getElementById('header4').addEventListener('click', function() {
   })
 
 
+
+  document.getElementById('article-6').addEventListener('click', function() {
+    var htmlCode = `
+    <!DOCTYPE html>
+<html>
+<body>
+  <h1>Number Histogram</h1>
+  <div id="numberInputs">
+    <input type="number" class="num">
+  </div>
+  <button onclick="addInput()">Add another number</button>
+  <button onclick="plotHistogram()">Plot histogram</button>
+  <div id="histogram" style="height:200px;"></div>
+
+  <script>
+    function addInput() {
+      let newInput = document.createElement("input");
+      newInput.type = "number";
+      newInput.className = "num";
+      document.getElementById('numberInputs').appendChild(newInput);
+    }
+
+    function plotHistogram() {
+      let nums = Array.from(document.getElementsByClassName('num')).map(input => Number(input.value));
+      let max = Math.max(...nums);
+
+      document.getElementById('histogram').innerHTML = ''; // clear old histogram
+      for (let num of nums) {
+        let bar = document.createElement("div");
+        bar.style.height = (num / max * 100) + "%";
+        bar.style.width = "20px";
+        bar.style.border = "1px solid black";
+        bar.style.display = "inline-block";
+        document.getElementById('histogram').appendChild(bar);
+      }
+    }
+  </script>
+</body>
+</html>
+
+    `;
+  
+    var textFrame = document.getElementById('textFrame');
+    textFrame.innerHTML = '';
+  
+    var linkElement = document.createElement('a');
+    linkElement.href = 'lab4/task6.html';
+    linkElement.textContent = 'Реалізація завдання';
+    linkElement.style.color = 'blue';
+  
+    textFrame.appendChild(linkElement);
+  
+    var htmlElement = document.createElement('pre');
+    htmlElement.style.color = '#2C81B7';
+    htmlElement.textContent = htmlCode;
+    textFrame.appendChild(htmlElement);
+  })
